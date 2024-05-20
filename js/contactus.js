@@ -31,53 +31,82 @@ function getWeatherDescription(weatherCode) {
             $("#weather").css("background-color", "grey");
             return 'Clear sky';
         case 1:
+            $("#weather").css("color", "yellow");
+            $("#weather").css("background-color", "grey");
+            return 'Mainly clear';
         case 2:
+            $("#weather").css("color", "yellow");
+            $("#weather").css("background-color", "grey");
+            return 'Partly cloudy';
         case 3:
             $("#weather").css("color", "yellow");
             $("#weather").css("background-color", "grey");
-            return 'Mainly clear / Partly cloudy / Overcast';
+            return 'Overcast';
         case 45:
         case 48:
             $("#weather").css("color", "grey");
-            return 'Fog / Depositing rime fog';
+            return 'Foggy';
         case 51:
+            $("#weather").css("color", "grey");
+            return 'Light Drizzle';
         case 53:
         case 55:
             $("#weather").css("color", "grey");
-            return 'Drizzle: Light / Moderate / Dense intensity';
+            return 'Moderate Drizzle';
         case 56:
+             $("#weather").css("color", "grey");
+            return 'Light Freezing Drizzle';
         case 57:
             $("#weather").css("color", "grey");
-            return 'Freezing Drizzle: Light / Dense intensity';
+            return 'Dense intensity Freezing Drizzle';
         case 61:
+            $("#weather").css("color", "blue");
+            return 'Slight Rain';
         case 63:
+            $("#weather").css("color", "blue");
+            return 'Moderate Rain: Slighy';
         case 65:
             $("#weather").css("color", "blue");
-            return 'Rain: Slight / Moderate / Heavy intensity';
+            return 'Heavy intensity Rain';
         case 66:
+            $("#weather").css("color", "blue");
+            return 'Freezing Light Rain';
         case 67:
             $("#weather").css("color", "blue");
-            return 'Freezing Rain: Light and heavy intensity';
+            return 'Freezing heavy intensity Rain';
         case 71:
+            $("#weather").css("color", "white");
+            $("#weather").css("background-color", "grey");
+            return 'Slight Snowfall';
         case 73:
+            $("#weather").css("color", "white");
+            $("#weather").css("background-color", "grey");
+            return 'moderate Snowfall';
         case 75:
             $("#weather").css("color", "white");
             $("#weather").css("background-color", "grey");
-            return 'Snow fall: Slight, moderate, and heavy intensity';
+            return 'heavy intensity Snowfall';
         case 77:
             $("#weather").css("color", "white");
             $("#weather").css("background-color", "grey");
             return 'Snow grains';
         case 80:
+            $("#weather").css("color", "blue");
+            return 'Slight Rain showers';
         case 81:
+            $("#weather").css("color", "blue");
+            return 'moderate Rain showers';
         case 82:
             $("#weather").css("color", "blue");
-            return 'Rain showers: Slight, moderate, and violent';
+            return 'violent Rain showers';
         case 85:
+            $("#weather").css("color", "white");
+            $("#weather").css("background-color", "grey");
+            return 'slight Snow showers'
         case 86:
             $("#weather").css("color", "white");
             $("#weather").css("background-color", "grey");
-            return 'Snow showers slight and heavy';
+            return 'heavy Snow showers';
         default:
             $("#weather").css("color", "white");
             $("#weather").css("background-color", "grey");
