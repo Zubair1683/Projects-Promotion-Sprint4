@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | My Projects Website</title>
+  <link href="./style/index.css" rel="stylesheet" />
+  <link href="./style/general.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/834337f2eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img id="logoImage" src="images/logo.png" alt="logoPic">
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li class="link" id="currentPage"><a href="index.html">HOME</a></li>
+        <li class="link"><a href="projects.html">PROJECTS</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a> </li>
+        <li class="link"><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <button>
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="content">
+        <li class="link" id="currentPage"><a href="index.html">HOME</a></li>
+        <li class="link"><a href="projects.html">PROJECTS</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a></li>
+        <li class="link"><a href="about.html">ABOUT</a></li>
+      </div>
+    </div>
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 2436803288e7276e1955ecca9726a86b14a19206
+  </header>
+  <div class="mainInfoText">
+    <h1>Welcome, be ready to discover your Journey</h1><br>
+    <p>
+      At incredible projects, we believe in the power of innovation and creativity. Our mission is to inspire and
+      empower you to explore new horizons. Each of our pages is designed to engage, inform, and motivate you
+      to achieve your goals. Dive into our journey and discover the endless possibilities that await. Together, we can
+      turn dreams into reality and make a lasting impact. Let’s embark on this exciting adventure!
+    </p>
+  </div>
+  <main>
+    <div class="projects">
+      <div class="project1" id="oddProject">
+        <div class="top">
+          <div class="infoBox">
+            <a href="projects/projectInfo1.html" class="titlebutton" onclick="increaseViewCount(1, event)">
+              <h1 class="ProjectName" id="ProjectName1">AI Brain</h1>
+            </a>
+          </div>
+          <div class="projectPhoto">
+            <a href="projects/projectInfo1.html" class="imagebutton" onclick="increaseViewCount(1, event)">
+              <img src="images/projects/Ai_Brain.png" alt="Project-1">
+            </a>
+          </div>
+        </div>
+        <div class="infoBox">
+          <p class="shortInfoText">This is a chatting friend created by using Pyhton.</p><br>
+          <h5 class="viewC" id="viewCounter1">0 view</h5>
+        </div>
+      </div>
+
+      <div class="project1">
+        <div class="top">
+          <div class="infoBox">
+            <a href="projects/projectInfo2.html" class="titlebutton" onclick="increaseViewCount(2, event)">
+              <h1 class="ProjectName" id="ProjectName2">Calculator</h1>
+            </a>
+          </div>
+          <div class="projectPhoto">
+            <a href="projects/projectInfo2.html" class="imagebutton" onclick="increaseViewCount(2, event)">
+              <img src="images/projects/calculator_java.jpeg" alt="Project-2">
+            </a>
+          </div>
+        </div>
+        <div class="infoBox">
+          <p class="shortInfoText">This is an application at least good as other calculator.<br>It is a Java
+            application.</p><br>
+          <h5 class="viewC" id="viewCounter2">0 view</h5>
+        </div>
+      </div>
+      <div class="project1" id="oddProject">
+        <div class="top">
+          <div class="infoBox">
+            <a href="projects/projectInfo3.html" class="titlebutton" onclick="increaseViewCount(3, event)">
+              <h1 class="ProjectName" id="ProjectName3">Chess</h1>
+            </a>
+          </div>
+          <div class="projectPhoto">
+            <a href="projects/projectInfo3.html" class="imagebutton" onclick="increaseViewCount(3, event)">
+              <img src="images/projects/Chess_java.jpeg" alt="Project-3">
+            </a>
+          </div>
+        </div>
+        <div class="infoBox">
+          <p class="shortInfoText">This is a chess game contains all rules.<br>You should play with your friend.</p>
+          <h5 class="viewC" id="viewCounter3">0 view</h5>
+        </div>
+      </div>
+      <div class="project1">
+        <div class="top">
+          <div class="infoBox">
+            <a href="projects/projectInfo4.html" class="titlebutton" onclick="increaseViewCount(4, event)">
+              <h1 class="ProjectName" id="ProjectName4">Music player</h1>
+            </a>
+          </div>
+          <div class="projectPhoto">
+            <a href="projects/projectInfo4.html" class="imagebutton" onclick="increaseViewCount(4, event)">
+              <img src="images/projects/music-player-python-project.webp" alt="Project-4">
+            </a>
+          </div>
+        </div>
+        <div class="infoBox">
+          <p class="shortInfoText">This is an application that you can listen anything.<br>It doesn't share your
+            informations.</p><br>
+          <h5 class="viewC" id="viewCounter4">0 view</h5>
+        </div>
+      </div>
+    </div>
+    <div class="viewSection">
+      <div class="viewpart">
+        <h1>Top 3 view list</h1>
+        <ol id="topList">
+        </ol>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy;2024 | All Rights Reserved</p>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

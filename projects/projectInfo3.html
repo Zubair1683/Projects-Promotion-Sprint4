@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess | My Projects Website</title>
+  <link href="../style/projectInfo.css" rel="stylesheet" />
+  <link href="../style/general.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/834337f2eb.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../jquery-ui-1.13.3/jquery-ui.css">
+  <script src="../jquery-ui-1.13.3/external/jquery/jquery.js"></script>
+  <script src="../jquery-ui-1.13.3/jquery-ui.js"></script>
+  <script src="../js/projects.js"></script>
+  <script src="../js/checker.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" class="logo">
+      <img id="logoImage" src="../images/logo.png" alt="logoPic">
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li class="link"><a href="../index.html">HOME</a></li>
+        <li class="link"><a href="../projects.html">PROJECTS</a></li>
+        <li class="link"><a href="../contact.html">CONTACT</a></li>
+        <li class="link"><a href="../about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <button>
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="content">
+        <li class="link"><a href="../index.html">HOME</a></li>
+        <li class="link"> <a href="../projects.html">PROJECTS</a></li>
+        <li class="link"><a href="../contact.html">CONTACT</a></li>
+        <li class="link"><a href="../about.html">ABOUT</a></li>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="title">
+      <div class="ProjectName">
+        <h1>Chess</h1>
+      </div>
+      <div class="pagging">
+        <button onclick="increaseViewCount(2, event)">Back</button>
+        <button onclick="increaseViewCount(4, event)">Next</button>
+      </div>
+    </div>
+    <div class="ProjectView">
+      <div class="ProjectVPhoto">
+        <img src="../images/projects/Chess_java.jpeg" alt="Chess_java">
+      </div>
+      <div class="ProjectVInfo">
+        <h1 class="normal">Java Programming language</h1>
+        <p class="hide">Chess coding in Java presents an intricate challenge, involving the creation of a program that
+          mirrors the rules and intricacies of the timeless game of chess. Developers embark on a journey of
+          constructing classes to model the chessboard, individual pieces, and the intricate game logic that governs
+          each move. This often includes establishing algorithms for validating moves, detecting checkmate scenarios,
+          and managing the dynamic state of the game.
+          <br>In this endeavor, programmers delve into object-oriented design principles to encapsulate the behavior and
+          properties of each chess piece. Through careful implementation, they aim to accurately simulate the strategic
+          depth and complexity of chess, ensuring that the program enforces the rules of the game and provides an
+          immersive experience for players.<br> Overall, chess coding in Java is a fascinating exploration of algorithmic
+          problem-solving, requiring a deep understanding of both the game's mechanics and Java's language features to
+          craft a robust and enjoyable chess-playing experience.
+        </p>
+        <button class="infobutton">Info <i class="fa fa-refresh"></i></button>
+      </div>
+    </div>
+    <div class="ProjectOthers">
+      <div class="ProjectComment">
+        <div class="addComment">
+
+          <form id="addComment">
+            <h2>Comments</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Full Name..." required><br>
+            <label for="name">Write Comment:</label>
+            <textarea class="comment" id="comment" name="comment" placeholder="Type your comment..." rows="5" cols="50"
+              maxlength="500" required></textarea><br>
+            <input type="submit" id="send">
+          </form>
+
+
+        </div>
+        <div class="allComments">
+          <h2>All comments</h2><br>
+          <div id="allComments">
+
+          </div>
+        </div>
+      </div>
+      <div class="ProjectRec">
+        <h1>Recommended project</h1>
+        <div>
+          <h3>AI Brain</h3>
+          <h4>Python Programming language</h4>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy;2024 | All Rights Reserved</p>
+  </footer>
+
+  <script type="module" src="../js/projectinfo3.js"></script>
+</body>
+
+</html>

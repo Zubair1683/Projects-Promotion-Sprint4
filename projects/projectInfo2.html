@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator | My Projects Website</title>
+  <link href="../style/projectInfo.css" rel="stylesheet" />
+  <link href="../style/general.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/834337f2eb.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../jquery-ui-1.13.3/jquery-ui.css">
+  <script src="../jquery-ui-1.13.3/external/jquery/jquery.js"></script>
+  <script src="../jquery-ui-1.13.3/jquery-ui.js"></script>
+  <script src="../js/projects.js"></script>
+  <script src="../js/checker.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" class="logo">
+      <img id="logoImage" src="../images/logo.png" alt="logoPic">
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li class="link"><a href="../index.html">HOME</a></li>
+        <li class="link"><a href="../projects.html">PROJECTS</a></li>
+        <li class="link"><a href="../contact.html">CONTACT</a></li>
+        <li class="link"><a href="../about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <button>
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="content">
+        <li class="link"><a href="../index.html">HOME</a></li>
+        <li class="link"> <a href="../projects.html">PROJECTS</a></li>
+        <li class="link"><a href="../contact.html">CONTACT</a></li>
+        <li class="link"><a href="../about.html">ABOUT</a></li>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="title">
+      <div class="ProjectName">
+        <h1>Calculator</h1>
+      </div>
+      <div class="pagging">
+        <button onclick="increaseViewCount(1, event)">Back</button>
+        <button onclick="increaseViewCount(3, event)">Next</button>
+      </div>
+    </div>
+    <div class="ProjectView">
+      <div class="ProjectVPhoto">
+        <img src="../images/projects/calculator_java.jpeg" alt="calculator_java">
+      </div>
+      <div class="ProjectVInfo">
+        <h1 class="normal">Java Programming language</h1>
+        <p class="hide">This Java calculator is a basic yet effective tool for performing arithmetic operations. Users
+          input two numbers and select an operation from addition, subtraction, multiplication, or division. The program
+          then computes the result and displays it to the user. Its simplicity makes it accessible to users of all
+          levels, from beginners to experienced programmers.
+          <br>What sets this calculator apart is its error-handling capabilities. It checks for common errors like
+          division by zero and alerts users to input mistakes, ensuring accurate results. This attention to detail
+          enhances user experience and confidence in the calculator's output.<br> Overall, with its user-friendly interface
+          and robust error handling, this Java calculator is a reliable choice for anyone in need of quick and accurate
+          mathematical computations.
+        </p>
+        <button class="infobutton">Info <i class="fa fa-refresh"></i></button>
+      </div>
+    </div>
+    <div class="ProjectOthers">
+      <div class="ProjectComment">
+        <div class="addComment">
+
+          <form id="addComment">
+            <h2>Comments</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Full Name..." required><br>
+            <label for="name">Write Comment:</label>
+            <textarea class="comment" id="comment" name="comment" placeholder="Type your comment..." rows="5" cols="50"
+              maxlength="500" required></textarea><br>
+            <input type="submit" id="send">
+          </form>
+
+
+        </div>
+        <div class="allComments">
+          <h2>All comments</h2><br>
+          <div id="allComments">
+
+          </div>
+        </div>
+      </div>
+      <div class="ProjectRec">
+        <h1>Recommended project</h1>
+        <div>
+          <h3>AI Brain</h3>
+          <h4>Python Programming language</h4>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy;2024 | All Rights Reserved</p>
+  </footer>
+
+  <script type="module" src="../js/projectinfo2.js"></script>
+</body>
+
+</html>

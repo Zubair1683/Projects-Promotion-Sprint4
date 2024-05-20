@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player | My Projects Website</title>
+  <link href="../style/projectInfo.css" rel="stylesheet" />
+  <link href="../style/general.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/834337f2eb.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../jquery-ui-1.13.3/jquery-ui.css">
+  <script src="../jquery-ui-1.13.3/external/jquery/jquery.js"></script>
+  <script src="../jquery-ui-1.13.3/jquery-ui.js"></script>
+  <script src="../js/projects.js"></script>
+  <script src="../js/checker.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" class="logo">
+      <img id="logoImage" src="../images/logo.png" alt="logoPic">
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li class="link"><a href="../index.html">HOME</a></li>
+        <li class="link"><a href="../projects.html">PROJECTS</a></li>
+        <li class="link"><a href="../contact.html">CONTACT</a></li>
+        <li class="link"><a href="../about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <button>
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="content">
+        <li class="link"><a href="../index.html">HOME</a></li>
+        <li class="link"> <a href="../projects.html">PROJECTS</a></li>
+        <li class="link"><a href="../contact.html">CONTACT</a></li>
+        <li class="link"><a href="../about.html">ABOUT</a></li>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="title">
+      <div class="ProjectName">
+        <h1>Music player</h1>
+      </div>
+      <div class="pagging">
+        <button onclick="increaseViewCount(3, event)">Back</button>
+
+      </div>
+    </div>
+
+    <div class="ProjectView">
+      <div class="ProjectVPhoto">
+        <img src="../images/projects/music-player-python-project.webp" alt="music_player_python_project">
+      </div>
+      <div class="ProjectVInfo">
+        <h1 class="normal">Python Programming language</h1>
+        <p class="hide">Creating a music player in Python opens up a world of possibilities for music enthusiasts and
+          developers alike. In such a project, developers typically leverage libraries like Pygame or Tkinter to build a
+          graphical user interface (GUI) for the player, allowing users to navigate their music library with ease.
+          Through Python's extensive ecosystem of audio processing libraries, developers can implement features such as
+          playing, pausing, skipping tracks, adjusting volume, and even creating playlists.
+          <br>Additionally, integrating functionalities like audio visualization or equalizer settings enhances the user
+          experience, providing a dynamic and immersive way to interact with music. Python's flexibility enables
+          developers to tailor the music player to their preferences, whether they're creating a minimalistic player for
+          personal use or a feature-rich application for broader audiences.<br> Overall, coding a music player in Python is
+          not only a rewarding technical challenge but also an opportunity to create a personalized and enjoyable
+          listening experience for users.
+        </p>
+        <button class="infobutton">Info <i class="fa fa-refresh"></i></button>
+      </div>
+    </div>
+    <div class="ProjectOthers">
+      <div class="ProjectComment">
+        <div class="addComment">
+
+          <form id="addComment">
+            <h2>Comments</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Full Name..." required><br>
+            <label for="name">Write Comment:</label>
+            <textarea class="comment" id="comment" name="comment" placeholder="Type your comment..." rows="5" cols="50"
+              maxlength="500" required></textarea><br>
+            <input type="submit" id="send">
+          </form>
+
+
+        </div>
+        <div class="allComments">
+          <h2>All comments</h2><br>
+          <div id="allComments">
+
+          </div>
+        </div>
+      </div>
+      <div class="ProjectRec">
+        <h1>Recommended project</h1>
+        <div>
+          <h3>AI Brain</h3>
+          <h4>Python Programming language </h4>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy;2024 | All Rights Reserved</p>
+  </footer>
+
+  <script type="module" src="../js/projectinfo4.js"></script>
+</body>
+
+</html>

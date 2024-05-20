@@ -1,0 +1,242 @@
+/* Apply basic styles to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d1d4cf;
+}
+
+/* Styles for the fixed header navigation bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    transition: 0.6s;
+    background: #2f3e46;
+}
+
+/* Style for the logo image in the navigation bar */
+#logoImage {
+    height: 50px;
+}
+
+/* Styles for the navigation links container */
+header .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the navigation links */
+header .navbar a {
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+/* Styles for the underline for the navigation links */
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -8px;
+    left: 12px;
+    background-color: #d1d4cf;
+    transition: all 0.3s ease;
+}
+
+/* Expand the underline effect on hover for the navigation links */
+.link a:hover::after {
+    width: 70%;
+}
+
+/* Styles for the list of navigation links */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Styles for the list items of the navigation links */
+.navbar ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Styles for the navigation links on hover */
+header .navbar a:hover {
+    color: #000000;
+
+}
+
+/* Styles for the currentPage link */
+/* Styles for the navigation links */
+header .navbar #currentPage a {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Styles for the list of navigation links */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Styles for the list items of the navigation links */
+.navbar ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Styles for the navigation links on hover */
+header .navbar #currentPage a:hover {
+    color: #000000;
+
+}
+
+
+/* Float the list items of the navigation links */
+.navbar li {
+    float: left;
+}
+
+/* Hide the dropdown menu initially */
+.dropdown {
+    display: none;
+}
+
+/* Styles for the footer at the bottom of the page */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #2f3e46;
+    width: 100%;
+}
+
+/* Styles for the text inside the footer */
+.footer p {
+    color: aliceblue;
+}
+
+
+/* Media query for screens up to 500px wide */
+@media screen and (max-width:500px) {
+    header {
+        text-align: center;
+        height: auto;
+    }
+
+    header .navbar {
+        display: flex;
+        margin-left: 70px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+
+/* Media query for screens up to 750px wide */
+@media screen and (max-width:750px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+    }
+
+    header .dropdown:hover {
+        height: 200px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        float: auto;
+        margin: 10px;
+    }
+
+    header .navbar {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-right: 280px;
+    }
+
+    .dropdown button {
+        background-color: hsl(0, 1%, 19%);
+        color: rgb(177, 179, 182);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .dropdown a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        color: aliceblue;
+    }
+
+    .dropdown a:visited {
+        color: aliceblue;
+    }
+
+    .dropdown a:hover {
+        color: #000000;
+    }
+
+    .dropdown .content li {
+        list-style-type: none;
+    }
+
+    .dropdown .content {
+        display: none;
+        position: absolute;
+    }
+
+    .dropdown:hover .content {
+        display: block;
+        margin-left: 50px;
+        margin-top: -15px;
+    }
+}

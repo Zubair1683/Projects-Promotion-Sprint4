@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | My Projects Website</title>
+  <link href="./style/projects.css" rel="stylesheet" />
+  <link href="./style/general.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/834337f2eb.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./jquery-ui-1.13.3/jquery-ui.css">
+
+  <script src="./jquery-ui-1.13.3/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.13.3/jquery-ui.js"></script>
+    <script src="./js/slider.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img id="logoImage" src="images/logo.png" alt="logoPic">
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li class="link"><a href="index.html">HOME</a></li>
+        <li class="link"  id="currentPage"><a href="projects.html">PROJECTS</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a></li>
+        <li class="link"><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <button>
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="content">
+        <li class="link"><a href="index.html">HOME</a></li>
+        <li class="link" id="currentPage"> <a href="projects.html">PROJECTS</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a></li>
+        <li class="link"><a href="about.html">ABOUT</a></li>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="projects">
+      <div class="project">
+        <div class="projectTop">
+          <h1>AI Brain</h1>
+          <div class="info">
+            <p>An AI brain created using Python is essentially a smart system that learns from data to perform tasks.
+              Imagine it as a digital brain that can understand, reason, and make decisions like a human, but it runs on
+              code written in Python. This AI brain can do a lot of things, depending on how it's trained. For example, it could recognize
+              faces in photos, translate languages, recommend movies you might like, or even play games like chess.
+              Think of it as a super-smart assistant that can analyze information, find patterns, and provide helpful
+              insights or actions. What makes Python a popular choice for building these AI brains is its simplicity and the vast libraries
+              available for machine learning and AI tasks. So, with Python, developers can easily create AI brains that
+              learn from data and become smarter over time. It's like teaching a computer to think and act on its own,
+              opening up a world of possibilities for automation and intelligent decision-making.</p>
+          </div>
+        </div>
+        <div id="pPhoto">
+          <a href="projects/projectInfo1.html" class="imagebutton" onclick="increaseViewCount(1, event)">
+            <img src="images/projects/Ai_Brain.png" alt="Project-1">
+          </a>
+        </div>
+      </div>
+      <div id="pagging">
+        <div id="paggingElements">
+          <button id="upButton">&#8593;</button>
+          <h2 id="projNum" value="1">1</h2>
+          <button id="downButton">&#8595;</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy;2024 | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
